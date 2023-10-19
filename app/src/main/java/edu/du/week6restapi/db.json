@@ -1,0 +1,22 @@
+{
+  "Ski Resorts": [
+    {
+      "id": 1,
+      "Name": "Alta",
+      "Elevation": "11500",
+      "Verticle Feet": "2200",
+      "Average Annual Snowfall": "450in",
+      "Chairlift Count": "22",
+      "Average Daily Personnel": "9500"
+    },
+    {
+      "id": 2,
+      "Name": "Snowbird",
+      "Elevation": "10500",
+      "Verticle Feet": "2500",
+      "Average Annual Snowfall": "425in",
+      "Chairlift Count": "25",
+      "Average Daily Personnel": "10500"
+    }
+  ]
+}
