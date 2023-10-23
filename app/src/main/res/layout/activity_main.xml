@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.1">
 
         <Button
-            android:id="@+id/btn_get"
+            android:id="@+id/getButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="3dp"
@@ -28,7 +28,7 @@
             android:text="Get" />
 
         <Button
-            android:id="@+id/btn_post"
+            android:id="@+id/postButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="3dp"
@@ -36,7 +36,7 @@
             android:text="Post" />
 
         <Button
-            android:id="@+id/btn_put"
+            android:id="@+id/putButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="3dp"
@@ -44,7 +44,7 @@
             android:text="Put" />
 
         <Button
-            android:id="@+id/btn_delete"
+            android:id="@+id/deleteButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="3dp"
@@ -53,7 +53,7 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/txt_request"
+        android:id="@+id/requestView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="5dp"
@@ -67,7 +67,7 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
-        android:id="@+id/txt_response"
+        android:id="@+id/responseView"
         android:layout_width="fill_parent"
         android:layout_height="589dp"
         android:layout_marginHorizontal="5dp"

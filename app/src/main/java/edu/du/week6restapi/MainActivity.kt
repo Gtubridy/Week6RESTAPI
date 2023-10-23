@@ -36,10 +36,10 @@ class MainActivity : AppCompatActivity() {
         service = retrofit.create(SkiResortService::class.java)
         gson = GsonBuilder().setPrettyPrinting().create()
 
-        requestText = findViewById(R.id.txt_request)
-        responseText = findViewById(R.id.txt_response)
+        requestText = findViewById(R.id.requestView)
+        responseText = findViewById(R.id.responseView)
 
-        findViewById<Button>(R.id.btn_get).setOnClickListener {
+        findViewById<Button>(R.id.getButton).setOnClickListener {
             makeCall {
                 if (TextUtils.isEmpty(requestText.text)){
                     service.getResorts()
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        findViewById<Button>(R.id.btn_post).setOnClickListener {
+        findViewById<Button>(R.id.postButton).setOnClickListener {
             val jsonObject = JSONObject()
             jsonObject.put("id", "3")
             jsonObject.put("Name", "Brighton")
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        findViewById<Button>(R.id.btn_put).setOnClickListener {
+        findViewById<Button>(R.id.putButton).setOnClickListener {
             val jsonObject = JSONObject()
             jsonObject.put("id", "1")
             jsonObject.put("Name", "Solitude")
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        findViewById<Button>(R.id.btn_delete).setOnClickListener {
+        findViewById<Button>(R.id.deleteButton).setOnClickListener {
             makeCall {
                 service.deleteResort(requestText.text.toString())
             }
